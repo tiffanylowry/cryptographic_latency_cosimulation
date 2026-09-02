@@ -1,0 +1,312 @@
+// residential_feeder.glm
+// Simple residential distribution feeder for HELICS co-simulation.
+// 4 houses on a radial feeder with a 7.2kV-to-120/240V transformer.
+
+clock {
+    timezone EST+5EDT;
+    starttime '2025-07-01 00:00:00';
+    stoptime  '2025-07-01 01:00:00';
+}
+
+#set minimum_timestep=60
+
+// ---- Modules ----
+
+module powerflow {
+    solver_method NR;
+}
+
+module residential {
+    implicit_enduses NONE;
+}
+
+module connection;
+
+module tape;
+
+// ---- Overhead Line Configuration ----
+
+object overhead_line_conductor {
+    name conductor_phase;
+    geometric_mean_radius 0.00446 ft;
+    resistance 1.12 Ohm/mile;
+}
+
+object overhead_line_conductor {
+    name conductor_neutral;
+    geometric_mean_radius 0.00446 ft;
+    resistance 1.12 Ohm/mile;
+}
+
+object line_spacing {
+    name spacing_500;
+    distance_AB 2.5 ft;
+    distance_AC 4.5 ft;
+    distance_BC 7.0 ft;
+    distance_AN 5.6 ft;
+    distance_BN 4.27 ft;
+    distance_CN 5.0 ft;
+}
+
+object line_configuration {
+    name line_config_1;
+    conductor_A conductor_phase;
+    conductor_B conductor_phase;
+    conductor_C conductor_phase;
+    conductor_N conductor_neutral;
+    spacing spacing_500;
+}
+
+// ---- Triplex (Service Drop) Configuration ----
+
+object triplex_line_conductor {
+    name triplex_conductor;
+    resistance 0.97;
+    geometric_mean_radius 0.0111;
+}
+
+object triplex_line_configuration {
+    name triplex_config;
+    conductor_1 triplex_conductor;
+    conductor_2 triplex_conductor;
+    conductor_N triplex_conductor;
+    insulation_thickness 0.08;
+    diameter 0.368;
+}
+
+// ---- Transformer Configuration ----
+
+object transformer_configuration {
+    name xfmr_config;
+    connect_type SINGLE_PHASE_CENTER_TAPPED;
+    install_type PADMOUNT;
+    power_rating 25.0 kVA;
+    primary_voltage 7200 V;
+    secondary_voltage 120 V;
+    impedance 0.006+0.0136j;
+}
+
+// ---- Network Topology ----
+
+// Substation (swing bus)
+object meter {
+    name substation;
+    bustype SWING;
+    nominal_voltage 7200;
+    phases ABCN;
+}
+
+// Primary feeder line
+object overhead_line {
+    name line_sub_to_xfmr;
+    phases ABCN;
+    from substation;
+    to node_xfmr_primary;
+    length 500 ft;
+    configuration line_config_1;
+}
+
+object node {
+    name node_xfmr_primary;
+    nominal_voltage 7200;
+    phases ABCN;
+}
+
+// Distribution transformer (7.2kV -> 120/240V split-phase)
+object transformer {
+    name dist_transformer;
+    phases AS;
+    from node_xfmr_primary;
+    to triplex_node_sec;
+    configuration xfmr_config;
+}
+
+object triplex_node {
+    name triplex_node_sec;
+    nominal_voltage 120;
+    phases AS;
+}
+
+// ---- House 1 ----
+
+object triplex_line {
+    name triplex_line_1;
+    phases AS;
+    from triplex_node_sec;
+    to triplex_meter_1;
+    length 50 ft;
+    configuration triplex_config;
+}
+
+object triplex_meter {
+    name triplex_meter_1;
+    nominal_voltage 120;
+    phases AS;
+}
+
+object house {
+    name house_1;
+    parent triplex_meter_1;
+    floor_area 1500 sf;
+    heating_setpoint 68;
+    cooling_setpoint 76;
+    air_temperature 72;
+    object ZIPload {
+        name load_1;
+        heat_fraction 0.5;
+        base_power 3.5 kW;
+        power_pf 1.0;
+        power_fraction 1.0;
+        current_fraction 0.0;
+        impedance_fraction 0.0;
+    };
+}
+
+// ---- House 2 ----
+
+object triplex_line {
+    name triplex_line_2;
+    phases AS;
+    from triplex_node_sec;
+    to triplex_meter_2;
+    length 75 ft;
+    configuration triplex_config;
+}
+
+object triplex_meter {
+    name triplex_meter_2;
+    nominal_voltage 120;
+    phases AS;
+}
+
+object house {
+    name house_2;
+    parent triplex_meter_2;
+    floor_area 1800 sf;
+    heating_setpoint 70;
+    cooling_setpoint 74;
+    air_temperature 72;
+    object ZIPload {
+        name load_2;
+        heat_fraction 0.5;
+        base_power 4.0 kW;
+        power_pf 1.0;
+        power_fraction 1.0;
+        current_fraction 0.0;
+        impedance_fraction 0.0;
+    };
+}
+
+// ---- House 3 ----
+
+object triplex_line {
+    name triplex_line_3;
+    phases AS;
+    from triplex_node_sec;
+    to triplex_meter_3;
+    length 100 ft;
+    configuration triplex_config;
+}
+
+object triplex_meter {
+    name triplex_meter_3;
+    nominal_voltage 120;
+    phases AS;
+}
+
+object house {
+    name house_3;
+    parent triplex_meter_3;
+    floor_area 2000 sf;
+    heating_setpoint 69;
+    cooling_setpoint 75;
+    air_temperature 72;
+    object ZIPload {
+        name load_3;
+        heat_fraction 0.5;
+        base_power 5.0 kW;
+        power_pf 1.0;
+        power_fraction 1.0;
+        current_fraction 0.0;
+        impedance_fraction 0.0;
+    };
+}
+
+// ---- House 4 ----
+
+object triplex_line {
+    name triplex_line_4;
+    phases AS;
+    from triplex_node_sec;
+    to triplex_meter_4;
+    length 60 ft;
+    configuration triplex_config;
+}
+
+object triplex_meter {
+    name triplex_meter_4;
+    nominal_voltage 120;
+    phases AS;
+}
+
+object house {
+    name house_4;
+    parent triplex_meter_4;
+    floor_area 1200 sf;
+    heating_setpoint 68;
+    cooling_setpoint 78;
+    air_temperature 72;
+    object ZIPload {
+        name load_4;
+        heat_fraction 0.5;
+        base_power 2.5 kW;
+        power_pf 1.0;
+        power_fraction 1.0;
+        current_fraction 0.0;
+        impedance_fraction 0.0;
+    };
+}
+
+// ---- Recorders ----
+
+object recorder {
+    parent substation;
+    property measured_power;
+    interval 60;
+    file ../output/substation_power.csv;
+}
+
+object recorder {
+    parent triplex_meter_1;
+    property measured_power,voltage_1;
+    interval 60;
+    file ../output/meter1.csv;
+}
+
+object recorder {
+    parent triplex_meter_2;
+    property measured_power,voltage_1;
+    interval 60;
+    file ../output/meter2.csv;
+}
+
+object recorder {
+    parent triplex_meter_3;
+    property measured_power,voltage_1;
+    interval 60;
+    file ../output/meter3.csv;
+}
+
+object recorder {
+    parent triplex_meter_4;
+    property measured_power,voltage_1;
+    interval 60;
+    file ../output/meter4.csv;
+}
+
+// ---- HELICS Interface ----
+
+object helics_msg {
+    name gld_helics;
+    configure gridlabd_helics_config.json;
+}

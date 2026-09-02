@@ -1,0 +1,47 @@
+{
+    "name": "ns3_federate",
+    "core_type": "zmq",
+    "period": 60,
+    "offset": 0,
+    "log_level": "warning",
+    "terminate_on_error": true,
+    "uninterruptible": false,
+    "publications": [
+        {
+            "key": "control_house_1",
+            "type": "double",
+            "unit": "W",
+            "global": false
+        },
+        {
+            "key": "control_house_2",
+            "type": "double",
+            "unit": "W",
+            "global": false
+        },
+        {
+            "key": "control_house_3",
+            "type": "double",
+            "unit": "W",
+            "global": false
+        },
+        {
+            "key": "control_house_4",
+            "type": "double",
+            "unit": "W",
+            "global": false
+        }
+    ],
+    "subscriptions": [
+        {
+            "key": "gridlabd_federate/total_load",
+            "type": "string",
+            "required": false
+        },
+        {
+            "key": "gridlabd_federate/voltage_1",
+            "type": "string",
+            "required": false
+        }
+    ]
+}

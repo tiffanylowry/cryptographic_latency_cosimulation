@@ -1,0 +1,2537 @@
+{
+  "num_gateways": 7,
+  "num_concentrators": 15,
+  "num_houses": 300,
+  "houses_per_concentrator": 20,
+  "gateways": [
+    {
+      "gateway_bus": "611",
+      "concentrator_idx": [
+        1
+      ]
+    },
+    {
+      "gateway_bus": "634",
+      "concentrator_idx": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "gateway_bus": "645",
+      "concentrator_idx": [
+        5,
+        6
+      ]
+    },
+    {
+      "gateway_bus": "646",
+      "concentrator_idx": [
+        7,
+        8
+      ]
+    },
+    {
+      "gateway_bus": "652",
+      "concentrator_idx": [
+        9
+      ]
+    },
+    {
+      "gateway_bus": "675",
+      "concentrator_idx": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "gateway_bus": "692",
+      "concentrator_idx": [
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "concentrators": [
+    {
+      "concentrator_idx": 1,
+      "trip_meter": "trip_meter1",
+      "gateway_bus": "611"
+    },
+    {
+      "concentrator_idx": 2,
+      "trip_meter": "trip_meter2",
+      "gateway_bus": "634"
+    },
+    {
+      "concentrator_idx": 3,
+      "trip_meter": "trip_meter3",
+      "gateway_bus": "634"
+    },
+    {
+      "concentrator_idx": 4,
+      "trip_meter": "trip_meter4",
+      "gateway_bus": "634"
+    },
+    {
+      "concentrator_idx": 5,
+      "trip_meter": "trip_meter5",
+      "gateway_bus": "645"
+    },
+    {
+      "concentrator_idx": 6,
+      "trip_meter": "trip_meter6",
+      "gateway_bus": "645"
+    },
+    {
+      "concentrator_idx": 7,
+      "trip_meter": "trip_meter7",
+      "gateway_bus": "646"
+    },
+    {
+      "concentrator_idx": 8,
+      "trip_meter": "trip_meter8",
+      "gateway_bus": "646"
+    },
+    {
+      "concentrator_idx": 9,
+      "trip_meter": "trip_meter9",
+      "gateway_bus": "652"
+    },
+    {
+      "concentrator_idx": 10,
+      "trip_meter": "trip_meter10",
+      "gateway_bus": "675"
+    },
+    {
+      "concentrator_idx": 11,
+      "trip_meter": "trip_meter11",
+      "gateway_bus": "675"
+    },
+    {
+      "concentrator_idx": 12,
+      "trip_meter": "trip_meter12",
+      "gateway_bus": "675"
+    },
+    {
+      "concentrator_idx": 13,
+      "trip_meter": "trip_meter13",
+      "gateway_bus": "692"
+    },
+    {
+      "concentrator_idx": 14,
+      "trip_meter": "trip_meter14",
+      "gateway_bus": "692"
+    },
+    {
+      "concentrator_idx": 15,
+      "trip_meter": "trip_meter15",
+      "gateway_bus": "692"
+    }
+  ],
+  "houses": [
+    {
+      "global_idx": 0,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_1",
+      "zip_name": "zip_m1_1",
+      "waterheater_name": "wh_m1_1"
+    },
+    {
+      "global_idx": 1,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_2",
+      "zip_name": "zip_m1_2",
+      "waterheater_name": "wh_m1_2"
+    },
+    {
+      "global_idx": 2,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_3",
+      "zip_name": "zip_m1_3",
+      "waterheater_name": "wh_m1_3"
+    },
+    {
+      "global_idx": 3,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_4",
+      "zip_name": "zip_m1_4",
+      "waterheater_name": "wh_m1_4"
+    },
+    {
+      "global_idx": 4,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_5",
+      "zip_name": "zip_m1_5",
+      "waterheater_name": "wh_m1_5"
+    },
+    {
+      "global_idx": 5,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_6",
+      "zip_name": "zip_m1_6",
+      "waterheater_name": "wh_m1_6"
+    },
+    {
+      "global_idx": 6,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_7",
+      "zip_name": "zip_m1_7",
+      "waterheater_name": "wh_m1_7"
+    },
+    {
+      "global_idx": 7,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_8",
+      "zip_name": "zip_m1_8",
+      "waterheater_name": "wh_m1_8"
+    },
+    {
+      "global_idx": 8,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_9",
+      "zip_name": "zip_m1_9",
+      "waterheater_name": "wh_m1_9"
+    },
+    {
+      "global_idx": 9,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_10",
+      "zip_name": "zip_m1_10",
+      "waterheater_name": "wh_m1_10"
+    },
+    {
+      "global_idx": 10,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_11",
+      "zip_name": "zip_m1_11",
+      "waterheater_name": "wh_m1_11"
+    },
+    {
+      "global_idx": 11,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_12",
+      "zip_name": "zip_m1_12",
+      "waterheater_name": "wh_m1_12"
+    },
+    {
+      "global_idx": 12,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_13",
+      "zip_name": "zip_m1_13",
+      "waterheater_name": "wh_m1_13"
+    },
+    {
+      "global_idx": 13,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_14",
+      "zip_name": "zip_m1_14",
+      "waterheater_name": "wh_m1_14"
+    },
+    {
+      "global_idx": 14,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_15",
+      "zip_name": "zip_m1_15",
+      "waterheater_name": "wh_m1_15"
+    },
+    {
+      "global_idx": 15,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_16",
+      "zip_name": "zip_m1_16",
+      "waterheater_name": "wh_m1_16"
+    },
+    {
+      "global_idx": 16,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_17",
+      "zip_name": "zip_m1_17",
+      "waterheater_name": "wh_m1_17"
+    },
+    {
+      "global_idx": 17,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_18",
+      "zip_name": "zip_m1_18",
+      "waterheater_name": "wh_m1_18"
+    },
+    {
+      "global_idx": 18,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_19",
+      "zip_name": "zip_m1_19",
+      "waterheater_name": "wh_m1_19"
+    },
+    {
+      "global_idx": 19,
+      "concentrator_idx": 1,
+      "gateway_bus": "611",
+      "house_name": "house_m1_20",
+      "zip_name": "zip_m1_20",
+      "waterheater_name": "wh_m1_20"
+    },
+    {
+      "global_idx": 20,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_1",
+      "zip_name": "zip_m2_1",
+      "waterheater_name": "wh_m2_1"
+    },
+    {
+      "global_idx": 21,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_2",
+      "zip_name": "zip_m2_2",
+      "waterheater_name": "wh_m2_2"
+    },
+    {
+      "global_idx": 22,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_3",
+      "zip_name": "zip_m2_3",
+      "waterheater_name": "wh_m2_3"
+    },
+    {
+      "global_idx": 23,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_4",
+      "zip_name": "zip_m2_4",
+      "waterheater_name": "wh_m2_4"
+    },
+    {
+      "global_idx": 24,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_5",
+      "zip_name": "zip_m2_5",
+      "waterheater_name": "wh_m2_5"
+    },
+    {
+      "global_idx": 25,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_6",
+      "zip_name": "zip_m2_6",
+      "waterheater_name": "wh_m2_6"
+    },
+    {
+      "global_idx": 26,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_7",
+      "zip_name": "zip_m2_7",
+      "waterheater_name": "wh_m2_7"
+    },
+    {
+      "global_idx": 27,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_8",
+      "zip_name": "zip_m2_8",
+      "waterheater_name": "wh_m2_8"
+    },
+    {
+      "global_idx": 28,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_9",
+      "zip_name": "zip_m2_9",
+      "waterheater_name": "wh_m2_9"
+    },
+    {
+      "global_idx": 29,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_10",
+      "zip_name": "zip_m2_10",
+      "waterheater_name": "wh_m2_10"
+    },
+    {
+      "global_idx": 30,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_11",
+      "zip_name": "zip_m2_11",
+      "waterheater_name": "wh_m2_11"
+    },
+    {
+      "global_idx": 31,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_12",
+      "zip_name": "zip_m2_12",
+      "waterheater_name": "wh_m2_12"
+    },
+    {
+      "global_idx": 32,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_13",
+      "zip_name": "zip_m2_13",
+      "waterheater_name": "wh_m2_13"
+    },
+    {
+      "global_idx": 33,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_14",
+      "zip_name": "zip_m2_14",
+      "waterheater_name": "wh_m2_14"
+    },
+    {
+      "global_idx": 34,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_15",
+      "zip_name": "zip_m2_15",
+      "waterheater_name": "wh_m2_15"
+    },
+    {
+      "global_idx": 35,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_16",
+      "zip_name": "zip_m2_16",
+      "waterheater_name": "wh_m2_16"
+    },
+    {
+      "global_idx": 36,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_17",
+      "zip_name": "zip_m2_17",
+      "waterheater_name": "wh_m2_17"
+    },
+    {
+      "global_idx": 37,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_18",
+      "zip_name": "zip_m2_18",
+      "waterheater_name": "wh_m2_18"
+    },
+    {
+      "global_idx": 38,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_19",
+      "zip_name": "zip_m2_19",
+      "waterheater_name": "wh_m2_19"
+    },
+    {
+      "global_idx": 39,
+      "concentrator_idx": 2,
+      "gateway_bus": "634",
+      "house_name": "house_m2_20",
+      "zip_name": "zip_m2_20",
+      "waterheater_name": "wh_m2_20"
+    },
+    {
+      "global_idx": 40,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_1",
+      "zip_name": "zip_m3_1",
+      "waterheater_name": "wh_m3_1"
+    },
+    {
+      "global_idx": 41,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_2",
+      "zip_name": "zip_m3_2",
+      "waterheater_name": "wh_m3_2"
+    },
+    {
+      "global_idx": 42,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_3",
+      "zip_name": "zip_m3_3",
+      "waterheater_name": "wh_m3_3"
+    },
+    {
+      "global_idx": 43,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_4",
+      "zip_name": "zip_m3_4",
+      "waterheater_name": "wh_m3_4"
+    },
+    {
+      "global_idx": 44,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_5",
+      "zip_name": "zip_m3_5",
+      "waterheater_name": "wh_m3_5"
+    },
+    {
+      "global_idx": 45,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_6",
+      "zip_name": "zip_m3_6",
+      "waterheater_name": "wh_m3_6"
+    },
+    {
+      "global_idx": 46,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_7",
+      "zip_name": "zip_m3_7",
+      "waterheater_name": "wh_m3_7"
+    },
+    {
+      "global_idx": 47,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_8",
+      "zip_name": "zip_m3_8",
+      "waterheater_name": "wh_m3_8"
+    },
+    {
+      "global_idx": 48,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_9",
+      "zip_name": "zip_m3_9",
+      "waterheater_name": "wh_m3_9"
+    },
+    {
+      "global_idx": 49,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_10",
+      "zip_name": "zip_m3_10",
+      "waterheater_name": "wh_m3_10"
+    },
+    {
+      "global_idx": 50,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_11",
+      "zip_name": "zip_m3_11",
+      "waterheater_name": "wh_m3_11"
+    },
+    {
+      "global_idx": 51,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_12",
+      "zip_name": "zip_m3_12",
+      "waterheater_name": "wh_m3_12"
+    },
+    {
+      "global_idx": 52,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_13",
+      "zip_name": "zip_m3_13",
+      "waterheater_name": "wh_m3_13"
+    },
+    {
+      "global_idx": 53,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_14",
+      "zip_name": "zip_m3_14",
+      "waterheater_name": "wh_m3_14"
+    },
+    {
+      "global_idx": 54,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_15",
+      "zip_name": "zip_m3_15",
+      "waterheater_name": "wh_m3_15"
+    },
+    {
+      "global_idx": 55,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_16",
+      "zip_name": "zip_m3_16",
+      "waterheater_name": "wh_m3_16"
+    },
+    {
+      "global_idx": 56,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_17",
+      "zip_name": "zip_m3_17",
+      "waterheater_name": "wh_m3_17"
+    },
+    {
+      "global_idx": 57,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_18",
+      "zip_name": "zip_m3_18",
+      "waterheater_name": "wh_m3_18"
+    },
+    {
+      "global_idx": 58,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_19",
+      "zip_name": "zip_m3_19",
+      "waterheater_name": "wh_m3_19"
+    },
+    {
+      "global_idx": 59,
+      "concentrator_idx": 3,
+      "gateway_bus": "634",
+      "house_name": "house_m3_20",
+      "zip_name": "zip_m3_20",
+      "waterheater_name": "wh_m3_20"
+    },
+    {
+      "global_idx": 60,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_1",
+      "zip_name": "zip_m4_1",
+      "waterheater_name": "wh_m4_1"
+    },
+    {
+      "global_idx": 61,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_2",
+      "zip_name": "zip_m4_2",
+      "waterheater_name": "wh_m4_2"
+    },
+    {
+      "global_idx": 62,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_3",
+      "zip_name": "zip_m4_3",
+      "waterheater_name": "wh_m4_3"
+    },
+    {
+      "global_idx": 63,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_4",
+      "zip_name": "zip_m4_4",
+      "waterheater_name": "wh_m4_4"
+    },
+    {
+      "global_idx": 64,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_5",
+      "zip_name": "zip_m4_5",
+      "waterheater_name": "wh_m4_5"
+    },
+    {
+      "global_idx": 65,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_6",
+      "zip_name": "zip_m4_6",
+      "waterheater_name": "wh_m4_6"
+    },
+    {
+      "global_idx": 66,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_7",
+      "zip_name": "zip_m4_7",
+      "waterheater_name": "wh_m4_7"
+    },
+    {
+      "global_idx": 67,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_8",
+      "zip_name": "zip_m4_8",
+      "waterheater_name": "wh_m4_8"
+    },
+    {
+      "global_idx": 68,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_9",
+      "zip_name": "zip_m4_9",
+      "waterheater_name": "wh_m4_9"
+    },
+    {
+      "global_idx": 69,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_10",
+      "zip_name": "zip_m4_10",
+      "waterheater_name": "wh_m4_10"
+    },
+    {
+      "global_idx": 70,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_11",
+      "zip_name": "zip_m4_11",
+      "waterheater_name": "wh_m4_11"
+    },
+    {
+      "global_idx": 71,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_12",
+      "zip_name": "zip_m4_12",
+      "waterheater_name": "wh_m4_12"
+    },
+    {
+      "global_idx": 72,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_13",
+      "zip_name": "zip_m4_13",
+      "waterheater_name": "wh_m4_13"
+    },
+    {
+      "global_idx": 73,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_14",
+      "zip_name": "zip_m4_14",
+      "waterheater_name": "wh_m4_14"
+    },
+    {
+      "global_idx": 74,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_15",
+      "zip_name": "zip_m4_15",
+      "waterheater_name": "wh_m4_15"
+    },
+    {
+      "global_idx": 75,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_16",
+      "zip_name": "zip_m4_16",
+      "waterheater_name": "wh_m4_16"
+    },
+    {
+      "global_idx": 76,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_17",
+      "zip_name": "zip_m4_17",
+      "waterheater_name": "wh_m4_17"
+    },
+    {
+      "global_idx": 77,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_18",
+      "zip_name": "zip_m4_18",
+      "waterheater_name": "wh_m4_18"
+    },
+    {
+      "global_idx": 78,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_19",
+      "zip_name": "zip_m4_19",
+      "waterheater_name": "wh_m4_19"
+    },
+    {
+      "global_idx": 79,
+      "concentrator_idx": 4,
+      "gateway_bus": "634",
+      "house_name": "house_m4_20",
+      "zip_name": "zip_m4_20",
+      "waterheater_name": "wh_m4_20"
+    },
+    {
+      "global_idx": 80,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_1",
+      "zip_name": "zip_m5_1",
+      "waterheater_name": "wh_m5_1"
+    },
+    {
+      "global_idx": 81,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_2",
+      "zip_name": "zip_m5_2",
+      "waterheater_name": "wh_m5_2"
+    },
+    {
+      "global_idx": 82,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_3",
+      "zip_name": "zip_m5_3",
+      "waterheater_name": "wh_m5_3"
+    },
+    {
+      "global_idx": 83,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_4",
+      "zip_name": "zip_m5_4",
+      "waterheater_name": "wh_m5_4"
+    },
+    {
+      "global_idx": 84,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_5",
+      "zip_name": "zip_m5_5",
+      "waterheater_name": "wh_m5_5"
+    },
+    {
+      "global_idx": 85,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_6",
+      "zip_name": "zip_m5_6",
+      "waterheater_name": "wh_m5_6"
+    },
+    {
+      "global_idx": 86,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_7",
+      "zip_name": "zip_m5_7",
+      "waterheater_name": "wh_m5_7"
+    },
+    {
+      "global_idx": 87,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_8",
+      "zip_name": "zip_m5_8",
+      "waterheater_name": "wh_m5_8"
+    },
+    {
+      "global_idx": 88,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_9",
+      "zip_name": "zip_m5_9",
+      "waterheater_name": "wh_m5_9"
+    },
+    {
+      "global_idx": 89,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_10",
+      "zip_name": "zip_m5_10",
+      "waterheater_name": "wh_m5_10"
+    },
+    {
+      "global_idx": 90,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_11",
+      "zip_name": "zip_m5_11",
+      "waterheater_name": "wh_m5_11"
+    },
+    {
+      "global_idx": 91,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_12",
+      "zip_name": "zip_m5_12",
+      "waterheater_name": "wh_m5_12"
+    },
+    {
+      "global_idx": 92,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_13",
+      "zip_name": "zip_m5_13",
+      "waterheater_name": "wh_m5_13"
+    },
+    {
+      "global_idx": 93,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_14",
+      "zip_name": "zip_m5_14",
+      "waterheater_name": "wh_m5_14"
+    },
+    {
+      "global_idx": 94,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_15",
+      "zip_name": "zip_m5_15",
+      "waterheater_name": "wh_m5_15"
+    },
+    {
+      "global_idx": 95,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_16",
+      "zip_name": "zip_m5_16",
+      "waterheater_name": "wh_m5_16"
+    },
+    {
+      "global_idx": 96,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_17",
+      "zip_name": "zip_m5_17",
+      "waterheater_name": "wh_m5_17"
+    },
+    {
+      "global_idx": 97,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_18",
+      "zip_name": "zip_m5_18",
+      "waterheater_name": "wh_m5_18"
+    },
+    {
+      "global_idx": 98,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_19",
+      "zip_name": "zip_m5_19",
+      "waterheater_name": "wh_m5_19"
+    },
+    {
+      "global_idx": 99,
+      "concentrator_idx": 5,
+      "gateway_bus": "645",
+      "house_name": "house_m5_20",
+      "zip_name": "zip_m5_20",
+      "waterheater_name": "wh_m5_20"
+    },
+    {
+      "global_idx": 100,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_1",
+      "zip_name": "zip_m6_1",
+      "waterheater_name": "wh_m6_1"
+    },
+    {
+      "global_idx": 101,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_2",
+      "zip_name": "zip_m6_2",
+      "waterheater_name": "wh_m6_2"
+    },
+    {
+      "global_idx": 102,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_3",
+      "zip_name": "zip_m6_3",
+      "waterheater_name": "wh_m6_3"
+    },
+    {
+      "global_idx": 103,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_4",
+      "zip_name": "zip_m6_4",
+      "waterheater_name": "wh_m6_4"
+    },
+    {
+      "global_idx": 104,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_5",
+      "zip_name": "zip_m6_5",
+      "waterheater_name": "wh_m6_5"
+    },
+    {
+      "global_idx": 105,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_6",
+      "zip_name": "zip_m6_6",
+      "waterheater_name": "wh_m6_6"
+    },
+    {
+      "global_idx": 106,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_7",
+      "zip_name": "zip_m6_7",
+      "waterheater_name": "wh_m6_7"
+    },
+    {
+      "global_idx": 107,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_8",
+      "zip_name": "zip_m6_8",
+      "waterheater_name": "wh_m6_8"
+    },
+    {
+      "global_idx": 108,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_9",
+      "zip_name": "zip_m6_9",
+      "waterheater_name": "wh_m6_9"
+    },
+    {
+      "global_idx": 109,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_10",
+      "zip_name": "zip_m6_10",
+      "waterheater_name": "wh_m6_10"
+    },
+    {
+      "global_idx": 110,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_11",
+      "zip_name": "zip_m6_11",
+      "waterheater_name": "wh_m6_11"
+    },
+    {
+      "global_idx": 111,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_12",
+      "zip_name": "zip_m6_12",
+      "waterheater_name": "wh_m6_12"
+    },
+    {
+      "global_idx": 112,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_13",
+      "zip_name": "zip_m6_13",
+      "waterheater_name": "wh_m6_13"
+    },
+    {
+      "global_idx": 113,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_14",
+      "zip_name": "zip_m6_14",
+      "waterheater_name": "wh_m6_14"
+    },
+    {
+      "global_idx": 114,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_15",
+      "zip_name": "zip_m6_15",
+      "waterheater_name": "wh_m6_15"
+    },
+    {
+      "global_idx": 115,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_16",
+      "zip_name": "zip_m6_16",
+      "waterheater_name": "wh_m6_16"
+    },
+    {
+      "global_idx": 116,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_17",
+      "zip_name": "zip_m6_17",
+      "waterheater_name": "wh_m6_17"
+    },
+    {
+      "global_idx": 117,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_18",
+      "zip_name": "zip_m6_18",
+      "waterheater_name": "wh_m6_18"
+    },
+    {
+      "global_idx": 118,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_19",
+      "zip_name": "zip_m6_19",
+      "waterheater_name": "wh_m6_19"
+    },
+    {
+      "global_idx": 119,
+      "concentrator_idx": 6,
+      "gateway_bus": "645",
+      "house_name": "house_m6_20",
+      "zip_name": "zip_m6_20",
+      "waterheater_name": "wh_m6_20"
+    },
+    {
+      "global_idx": 120,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_1",
+      "zip_name": "zip_m7_1",
+      "waterheater_name": "wh_m7_1"
+    },
+    {
+      "global_idx": 121,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_2",
+      "zip_name": "zip_m7_2",
+      "waterheater_name": "wh_m7_2"
+    },
+    {
+      "global_idx": 122,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_3",
+      "zip_name": "zip_m7_3",
+      "waterheater_name": "wh_m7_3"
+    },
+    {
+      "global_idx": 123,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_4",
+      "zip_name": "zip_m7_4",
+      "waterheater_name": "wh_m7_4"
+    },
+    {
+      "global_idx": 124,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_5",
+      "zip_name": "zip_m7_5",
+      "waterheater_name": "wh_m7_5"
+    },
+    {
+      "global_idx": 125,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_6",
+      "zip_name": "zip_m7_6",
+      "waterheater_name": "wh_m7_6"
+    },
+    {
+      "global_idx": 126,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_7",
+      "zip_name": "zip_m7_7",
+      "waterheater_name": "wh_m7_7"
+    },
+    {
+      "global_idx": 127,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_8",
+      "zip_name": "zip_m7_8",
+      "waterheater_name": "wh_m7_8"
+    },
+    {
+      "global_idx": 128,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_9",
+      "zip_name": "zip_m7_9",
+      "waterheater_name": "wh_m7_9"
+    },
+    {
+      "global_idx": 129,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_10",
+      "zip_name": "zip_m7_10",
+      "waterheater_name": "wh_m7_10"
+    },
+    {
+      "global_idx": 130,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_11",
+      "zip_name": "zip_m7_11",
+      "waterheater_name": "wh_m7_11"
+    },
+    {
+      "global_idx": 131,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_12",
+      "zip_name": "zip_m7_12",
+      "waterheater_name": "wh_m7_12"
+    },
+    {
+      "global_idx": 132,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_13",
+      "zip_name": "zip_m7_13",
+      "waterheater_name": "wh_m7_13"
+    },
+    {
+      "global_idx": 133,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_14",
+      "zip_name": "zip_m7_14",
+      "waterheater_name": "wh_m7_14"
+    },
+    {
+      "global_idx": 134,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_15",
+      "zip_name": "zip_m7_15",
+      "waterheater_name": "wh_m7_15"
+    },
+    {
+      "global_idx": 135,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_16",
+      "zip_name": "zip_m7_16",
+      "waterheater_name": "wh_m7_16"
+    },
+    {
+      "global_idx": 136,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_17",
+      "zip_name": "zip_m7_17",
+      "waterheater_name": "wh_m7_17"
+    },
+    {
+      "global_idx": 137,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_18",
+      "zip_name": "zip_m7_18",
+      "waterheater_name": "wh_m7_18"
+    },
+    {
+      "global_idx": 138,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_19",
+      "zip_name": "zip_m7_19",
+      "waterheater_name": "wh_m7_19"
+    },
+    {
+      "global_idx": 139,
+      "concentrator_idx": 7,
+      "gateway_bus": "646",
+      "house_name": "house_m7_20",
+      "zip_name": "zip_m7_20",
+      "waterheater_name": "wh_m7_20"
+    },
+    {
+      "global_idx": 140,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_1",
+      "zip_name": "zip_m8_1",
+      "waterheater_name": "wh_m8_1"
+    },
+    {
+      "global_idx": 141,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_2",
+      "zip_name": "zip_m8_2",
+      "waterheater_name": "wh_m8_2"
+    },
+    {
+      "global_idx": 142,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_3",
+      "zip_name": "zip_m8_3",
+      "waterheater_name": "wh_m8_3"
+    },
+    {
+      "global_idx": 143,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_4",
+      "zip_name": "zip_m8_4",
+      "waterheater_name": "wh_m8_4"
+    },
+    {
+      "global_idx": 144,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_5",
+      "zip_name": "zip_m8_5",
+      "waterheater_name": "wh_m8_5"
+    },
+    {
+      "global_idx": 145,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_6",
+      "zip_name": "zip_m8_6",
+      "waterheater_name": "wh_m8_6"
+    },
+    {
+      "global_idx": 146,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_7",
+      "zip_name": "zip_m8_7",
+      "waterheater_name": "wh_m8_7"
+    },
+    {
+      "global_idx": 147,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_8",
+      "zip_name": "zip_m8_8",
+      "waterheater_name": "wh_m8_8"
+    },
+    {
+      "global_idx": 148,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_9",
+      "zip_name": "zip_m8_9",
+      "waterheater_name": "wh_m8_9"
+    },
+    {
+      "global_idx": 149,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_10",
+      "zip_name": "zip_m8_10",
+      "waterheater_name": "wh_m8_10"
+    },
+    {
+      "global_idx": 150,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_11",
+      "zip_name": "zip_m8_11",
+      "waterheater_name": "wh_m8_11"
+    },
+    {
+      "global_idx": 151,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_12",
+      "zip_name": "zip_m8_12",
+      "waterheater_name": "wh_m8_12"
+    },
+    {
+      "global_idx": 152,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_13",
+      "zip_name": "zip_m8_13",
+      "waterheater_name": "wh_m8_13"
+    },
+    {
+      "global_idx": 153,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_14",
+      "zip_name": "zip_m8_14",
+      "waterheater_name": "wh_m8_14"
+    },
+    {
+      "global_idx": 154,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_15",
+      "zip_name": "zip_m8_15",
+      "waterheater_name": "wh_m8_15"
+    },
+    {
+      "global_idx": 155,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_16",
+      "zip_name": "zip_m8_16",
+      "waterheater_name": "wh_m8_16"
+    },
+    {
+      "global_idx": 156,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_17",
+      "zip_name": "zip_m8_17",
+      "waterheater_name": "wh_m8_17"
+    },
+    {
+      "global_idx": 157,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_18",
+      "zip_name": "zip_m8_18",
+      "waterheater_name": "wh_m8_18"
+    },
+    {
+      "global_idx": 158,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_19",
+      "zip_name": "zip_m8_19",
+      "waterheater_name": "wh_m8_19"
+    },
+    {
+      "global_idx": 159,
+      "concentrator_idx": 8,
+      "gateway_bus": "646",
+      "house_name": "house_m8_20",
+      "zip_name": "zip_m8_20",
+      "waterheater_name": "wh_m8_20"
+    },
+    {
+      "global_idx": 160,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_1",
+      "zip_name": "zip_m9_1",
+      "waterheater_name": "wh_m9_1"
+    },
+    {
+      "global_idx": 161,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_2",
+      "zip_name": "zip_m9_2",
+      "waterheater_name": "wh_m9_2"
+    },
+    {
+      "global_idx": 162,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_3",
+      "zip_name": "zip_m9_3",
+      "waterheater_name": "wh_m9_3"
+    },
+    {
+      "global_idx": 163,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_4",
+      "zip_name": "zip_m9_4",
+      "waterheater_name": "wh_m9_4"
+    },
+    {
+      "global_idx": 164,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_5",
+      "zip_name": "zip_m9_5",
+      "waterheater_name": "wh_m9_5"
+    },
+    {
+      "global_idx": 165,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_6",
+      "zip_name": "zip_m9_6",
+      "waterheater_name": "wh_m9_6"
+    },
+    {
+      "global_idx": 166,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_7",
+      "zip_name": "zip_m9_7",
+      "waterheater_name": "wh_m9_7"
+    },
+    {
+      "global_idx": 167,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_8",
+      "zip_name": "zip_m9_8",
+      "waterheater_name": "wh_m9_8"
+    },
+    {
+      "global_idx": 168,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_9",
+      "zip_name": "zip_m9_9",
+      "waterheater_name": "wh_m9_9"
+    },
+    {
+      "global_idx": 169,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_10",
+      "zip_name": "zip_m9_10",
+      "waterheater_name": "wh_m9_10"
+    },
+    {
+      "global_idx": 170,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_11",
+      "zip_name": "zip_m9_11",
+      "waterheater_name": "wh_m9_11"
+    },
+    {
+      "global_idx": 171,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_12",
+      "zip_name": "zip_m9_12",
+      "waterheater_name": "wh_m9_12"
+    },
+    {
+      "global_idx": 172,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_13",
+      "zip_name": "zip_m9_13",
+      "waterheater_name": "wh_m9_13"
+    },
+    {
+      "global_idx": 173,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_14",
+      "zip_name": "zip_m9_14",
+      "waterheater_name": "wh_m9_14"
+    },
+    {
+      "global_idx": 174,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_15",
+      "zip_name": "zip_m9_15",
+      "waterheater_name": "wh_m9_15"
+    },
+    {
+      "global_idx": 175,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_16",
+      "zip_name": "zip_m9_16",
+      "waterheater_name": "wh_m9_16"
+    },
+    {
+      "global_idx": 176,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_17",
+      "zip_name": "zip_m9_17",
+      "waterheater_name": "wh_m9_17"
+    },
+    {
+      "global_idx": 177,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_18",
+      "zip_name": "zip_m9_18",
+      "waterheater_name": "wh_m9_18"
+    },
+    {
+      "global_idx": 178,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_19",
+      "zip_name": "zip_m9_19",
+      "waterheater_name": "wh_m9_19"
+    },
+    {
+      "global_idx": 179,
+      "concentrator_idx": 9,
+      "gateway_bus": "652",
+      "house_name": "house_m9_20",
+      "zip_name": "zip_m9_20",
+      "waterheater_name": "wh_m9_20"
+    },
+    {
+      "global_idx": 180,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_1",
+      "zip_name": "zip_m10_1",
+      "waterheater_name": "wh_m10_1"
+    },
+    {
+      "global_idx": 181,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_2",
+      "zip_name": "zip_m10_2",
+      "waterheater_name": "wh_m10_2"
+    },
+    {
+      "global_idx": 182,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_3",
+      "zip_name": "zip_m10_3",
+      "waterheater_name": "wh_m10_3"
+    },
+    {
+      "global_idx": 183,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_4",
+      "zip_name": "zip_m10_4",
+      "waterheater_name": "wh_m10_4"
+    },
+    {
+      "global_idx": 184,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_5",
+      "zip_name": "zip_m10_5",
+      "waterheater_name": "wh_m10_5"
+    },
+    {
+      "global_idx": 185,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_6",
+      "zip_name": "zip_m10_6",
+      "waterheater_name": "wh_m10_6"
+    },
+    {
+      "global_idx": 186,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_7",
+      "zip_name": "zip_m10_7",
+      "waterheater_name": "wh_m10_7"
+    },
+    {
+      "global_idx": 187,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_8",
+      "zip_name": "zip_m10_8",
+      "waterheater_name": "wh_m10_8"
+    },
+    {
+      "global_idx": 188,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_9",
+      "zip_name": "zip_m10_9",
+      "waterheater_name": "wh_m10_9"
+    },
+    {
+      "global_idx": 189,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_10",
+      "zip_name": "zip_m10_10",
+      "waterheater_name": "wh_m10_10"
+    },
+    {
+      "global_idx": 190,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_11",
+      "zip_name": "zip_m10_11",
+      "waterheater_name": "wh_m10_11"
+    },
+    {
+      "global_idx": 191,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_12",
+      "zip_name": "zip_m10_12",
+      "waterheater_name": "wh_m10_12"
+    },
+    {
+      "global_idx": 192,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_13",
+      "zip_name": "zip_m10_13",
+      "waterheater_name": "wh_m10_13"
+    },
+    {
+      "global_idx": 193,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_14",
+      "zip_name": "zip_m10_14",
+      "waterheater_name": "wh_m10_14"
+    },
+    {
+      "global_idx": 194,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_15",
+      "zip_name": "zip_m10_15",
+      "waterheater_name": "wh_m10_15"
+    },
+    {
+      "global_idx": 195,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_16",
+      "zip_name": "zip_m10_16",
+      "waterheater_name": "wh_m10_16"
+    },
+    {
+      "global_idx": 196,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_17",
+      "zip_name": "zip_m10_17",
+      "waterheater_name": "wh_m10_17"
+    },
+    {
+      "global_idx": 197,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_18",
+      "zip_name": "zip_m10_18",
+      "waterheater_name": "wh_m10_18"
+    },
+    {
+      "global_idx": 198,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_19",
+      "zip_name": "zip_m10_19",
+      "waterheater_name": "wh_m10_19"
+    },
+    {
+      "global_idx": 199,
+      "concentrator_idx": 10,
+      "gateway_bus": "675",
+      "house_name": "house_m10_20",
+      "zip_name": "zip_m10_20",
+      "waterheater_name": "wh_m10_20"
+    },
+    {
+      "global_idx": 200,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_1",
+      "zip_name": "zip_m11_1",
+      "waterheater_name": "wh_m11_1"
+    },
+    {
+      "global_idx": 201,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_2",
+      "zip_name": "zip_m11_2",
+      "waterheater_name": "wh_m11_2"
+    },
+    {
+      "global_idx": 202,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_3",
+      "zip_name": "zip_m11_3",
+      "waterheater_name": "wh_m11_3"
+    },
+    {
+      "global_idx": 203,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_4",
+      "zip_name": "zip_m11_4",
+      "waterheater_name": "wh_m11_4"
+    },
+    {
+      "global_idx": 204,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_5",
+      "zip_name": "zip_m11_5",
+      "waterheater_name": "wh_m11_5"
+    },
+    {
+      "global_idx": 205,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_6",
+      "zip_name": "zip_m11_6",
+      "waterheater_name": "wh_m11_6"
+    },
+    {
+      "global_idx": 206,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_7",
+      "zip_name": "zip_m11_7",
+      "waterheater_name": "wh_m11_7"
+    },
+    {
+      "global_idx": 207,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_8",
+      "zip_name": "zip_m11_8",
+      "waterheater_name": "wh_m11_8"
+    },
+    {
+      "global_idx": 208,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_9",
+      "zip_name": "zip_m11_9",
+      "waterheater_name": "wh_m11_9"
+    },
+    {
+      "global_idx": 209,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_10",
+      "zip_name": "zip_m11_10",
+      "waterheater_name": "wh_m11_10"
+    },
+    {
+      "global_idx": 210,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_11",
+      "zip_name": "zip_m11_11",
+      "waterheater_name": "wh_m11_11"
+    },
+    {
+      "global_idx": 211,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_12",
+      "zip_name": "zip_m11_12",
+      "waterheater_name": "wh_m11_12"
+    },
+    {
+      "global_idx": 212,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_13",
+      "zip_name": "zip_m11_13",
+      "waterheater_name": "wh_m11_13"
+    },
+    {
+      "global_idx": 213,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_14",
+      "zip_name": "zip_m11_14",
+      "waterheater_name": "wh_m11_14"
+    },
+    {
+      "global_idx": 214,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_15",
+      "zip_name": "zip_m11_15",
+      "waterheater_name": "wh_m11_15"
+    },
+    {
+      "global_idx": 215,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_16",
+      "zip_name": "zip_m11_16",
+      "waterheater_name": "wh_m11_16"
+    },
+    {
+      "global_idx": 216,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_17",
+      "zip_name": "zip_m11_17",
+      "waterheater_name": "wh_m11_17"
+    },
+    {
+      "global_idx": 217,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_18",
+      "zip_name": "zip_m11_18",
+      "waterheater_name": "wh_m11_18"
+    },
+    {
+      "global_idx": 218,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_19",
+      "zip_name": "zip_m11_19",
+      "waterheater_name": "wh_m11_19"
+    },
+    {
+      "global_idx": 219,
+      "concentrator_idx": 11,
+      "gateway_bus": "675",
+      "house_name": "house_m11_20",
+      "zip_name": "zip_m11_20",
+      "waterheater_name": "wh_m11_20"
+    },
+    {
+      "global_idx": 220,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_1",
+      "zip_name": "zip_m12_1",
+      "waterheater_name": "wh_m12_1"
+    },
+    {
+      "global_idx": 221,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_2",
+      "zip_name": "zip_m12_2",
+      "waterheater_name": "wh_m12_2"
+    },
+    {
+      "global_idx": 222,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_3",
+      "zip_name": "zip_m12_3",
+      "waterheater_name": "wh_m12_3"
+    },
+    {
+      "global_idx": 223,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_4",
+      "zip_name": "zip_m12_4",
+      "waterheater_name": "wh_m12_4"
+    },
+    {
+      "global_idx": 224,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_5",
+      "zip_name": "zip_m12_5",
+      "waterheater_name": "wh_m12_5"
+    },
+    {
+      "global_idx": 225,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_6",
+      "zip_name": "zip_m12_6",
+      "waterheater_name": "wh_m12_6"
+    },
+    {
+      "global_idx": 226,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_7",
+      "zip_name": "zip_m12_7",
+      "waterheater_name": "wh_m12_7"
+    },
+    {
+      "global_idx": 227,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_8",
+      "zip_name": "zip_m12_8",
+      "waterheater_name": "wh_m12_8"
+    },
+    {
+      "global_idx": 228,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_9",
+      "zip_name": "zip_m12_9",
+      "waterheater_name": "wh_m12_9"
+    },
+    {
+      "global_idx": 229,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_10",
+      "zip_name": "zip_m12_10",
+      "waterheater_name": "wh_m12_10"
+    },
+    {
+      "global_idx": 230,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_11",
+      "zip_name": "zip_m12_11",
+      "waterheater_name": "wh_m12_11"
+    },
+    {
+      "global_idx": 231,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_12",
+      "zip_name": "zip_m12_12",
+      "waterheater_name": "wh_m12_12"
+    },
+    {
+      "global_idx": 232,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_13",
+      "zip_name": "zip_m12_13",
+      "waterheater_name": "wh_m12_13"
+    },
+    {
+      "global_idx": 233,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_14",
+      "zip_name": "zip_m12_14",
+      "waterheater_name": "wh_m12_14"
+    },
+    {
+      "global_idx": 234,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_15",
+      "zip_name": "zip_m12_15",
+      "waterheater_name": "wh_m12_15"
+    },
+    {
+      "global_idx": 235,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_16",
+      "zip_name": "zip_m12_16",
+      "waterheater_name": "wh_m12_16"
+    },
+    {
+      "global_idx": 236,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_17",
+      "zip_name": "zip_m12_17",
+      "waterheater_name": "wh_m12_17"
+    },
+    {
+      "global_idx": 237,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_18",
+      "zip_name": "zip_m12_18",
+      "waterheater_name": "wh_m12_18"
+    },
+    {
+      "global_idx": 238,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_19",
+      "zip_name": "zip_m12_19",
+      "waterheater_name": "wh_m12_19"
+    },
+    {
+      "global_idx": 239,
+      "concentrator_idx": 12,
+      "gateway_bus": "675",
+      "house_name": "house_m12_20",
+      "zip_name": "zip_m12_20",
+      "waterheater_name": "wh_m12_20"
+    },
+    {
+      "global_idx": 240,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_1",
+      "zip_name": "zip_m13_1",
+      "waterheater_name": "wh_m13_1"
+    },
+    {
+      "global_idx": 241,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_2",
+      "zip_name": "zip_m13_2",
+      "waterheater_name": "wh_m13_2"
+    },
+    {
+      "global_idx": 242,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_3",
+      "zip_name": "zip_m13_3",
+      "waterheater_name": "wh_m13_3"
+    },
+    {
+      "global_idx": 243,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_4",
+      "zip_name": "zip_m13_4",
+      "waterheater_name": "wh_m13_4"
+    },
+    {
+      "global_idx": 244,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_5",
+      "zip_name": "zip_m13_5",
+      "waterheater_name": "wh_m13_5"
+    },
+    {
+      "global_idx": 245,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_6",
+      "zip_name": "zip_m13_6",
+      "waterheater_name": "wh_m13_6"
+    },
+    {
+      "global_idx": 246,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_7",
+      "zip_name": "zip_m13_7",
+      "waterheater_name": "wh_m13_7"
+    },
+    {
+      "global_idx": 247,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_8",
+      "zip_name": "zip_m13_8",
+      "waterheater_name": "wh_m13_8"
+    },
+    {
+      "global_idx": 248,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_9",
+      "zip_name": "zip_m13_9",
+      "waterheater_name": "wh_m13_9"
+    },
+    {
+      "global_idx": 249,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_10",
+      "zip_name": "zip_m13_10",
+      "waterheater_name": "wh_m13_10"
+    },
+    {
+      "global_idx": 250,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_11",
+      "zip_name": "zip_m13_11",
+      "waterheater_name": "wh_m13_11"
+    },
+    {
+      "global_idx": 251,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_12",
+      "zip_name": "zip_m13_12",
+      "waterheater_name": "wh_m13_12"
+    },
+    {
+      "global_idx": 252,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_13",
+      "zip_name": "zip_m13_13",
+      "waterheater_name": "wh_m13_13"
+    },
+    {
+      "global_idx": 253,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_14",
+      "zip_name": "zip_m13_14",
+      "waterheater_name": "wh_m13_14"
+    },
+    {
+      "global_idx": 254,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_15",
+      "zip_name": "zip_m13_15",
+      "waterheater_name": "wh_m13_15"
+    },
+    {
+      "global_idx": 255,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_16",
+      "zip_name": "zip_m13_16",
+      "waterheater_name": "wh_m13_16"
+    },
+    {
+      "global_idx": 256,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_17",
+      "zip_name": "zip_m13_17",
+      "waterheater_name": "wh_m13_17"
+    },
+    {
+      "global_idx": 257,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_18",
+      "zip_name": "zip_m13_18",
+      "waterheater_name": "wh_m13_18"
+    },
+    {
+      "global_idx": 258,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_19",
+      "zip_name": "zip_m13_19",
+      "waterheater_name": "wh_m13_19"
+    },
+    {
+      "global_idx": 259,
+      "concentrator_idx": 13,
+      "gateway_bus": "692",
+      "house_name": "house_m13_20",
+      "zip_name": "zip_m13_20",
+      "waterheater_name": "wh_m13_20"
+    },
+    {
+      "global_idx": 260,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_1",
+      "zip_name": "zip_m14_1",
+      "waterheater_name": "wh_m14_1"
+    },
+    {
+      "global_idx": 261,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_2",
+      "zip_name": "zip_m14_2",
+      "waterheater_name": "wh_m14_2"
+    },
+    {
+      "global_idx": 262,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_3",
+      "zip_name": "zip_m14_3",
+      "waterheater_name": "wh_m14_3"
+    },
+    {
+      "global_idx": 263,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_4",
+      "zip_name": "zip_m14_4",
+      "waterheater_name": "wh_m14_4"
+    },
+    {
+      "global_idx": 264,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_5",
+      "zip_name": "zip_m14_5",
+      "waterheater_name": "wh_m14_5"
+    },
+    {
+      "global_idx": 265,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_6",
+      "zip_name": "zip_m14_6",
+      "waterheater_name": "wh_m14_6"
+    },
+    {
+      "global_idx": 266,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_7",
+      "zip_name": "zip_m14_7",
+      "waterheater_name": "wh_m14_7"
+    },
+    {
+      "global_idx": 267,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_8",
+      "zip_name": "zip_m14_8",
+      "waterheater_name": "wh_m14_8"
+    },
+    {
+      "global_idx": 268,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_9",
+      "zip_name": "zip_m14_9",
+      "waterheater_name": "wh_m14_9"
+    },
+    {
+      "global_idx": 269,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_10",
+      "zip_name": "zip_m14_10",
+      "waterheater_name": "wh_m14_10"
+    },
+    {
+      "global_idx": 270,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_11",
+      "zip_name": "zip_m14_11",
+      "waterheater_name": "wh_m14_11"
+    },
+    {
+      "global_idx": 271,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_12",
+      "zip_name": "zip_m14_12",
+      "waterheater_name": "wh_m14_12"
+    },
+    {
+      "global_idx": 272,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_13",
+      "zip_name": "zip_m14_13",
+      "waterheater_name": "wh_m14_13"
+    },
+    {
+      "global_idx": 273,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_14",
+      "zip_name": "zip_m14_14",
+      "waterheater_name": "wh_m14_14"
+    },
+    {
+      "global_idx": 274,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_15",
+      "zip_name": "zip_m14_15",
+      "waterheater_name": "wh_m14_15"
+    },
+    {
+      "global_idx": 275,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_16",
+      "zip_name": "zip_m14_16",
+      "waterheater_name": "wh_m14_16"
+    },
+    {
+      "global_idx": 276,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_17",
+      "zip_name": "zip_m14_17",
+      "waterheater_name": "wh_m14_17"
+    },
+    {
+      "global_idx": 277,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_18",
+      "zip_name": "zip_m14_18",
+      "waterheater_name": "wh_m14_18"
+    },
+    {
+      "global_idx": 278,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_19",
+      "zip_name": "zip_m14_19",
+      "waterheater_name": "wh_m14_19"
+    },
+    {
+      "global_idx": 279,
+      "concentrator_idx": 14,
+      "gateway_bus": "692",
+      "house_name": "house_m14_20",
+      "zip_name": "zip_m14_20",
+      "waterheater_name": "wh_m14_20"
+    },
+    {
+      "global_idx": 280,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_1",
+      "zip_name": "zip_m15_1",
+      "waterheater_name": "wh_m15_1"
+    },
+    {
+      "global_idx": 281,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_2",
+      "zip_name": "zip_m15_2",
+      "waterheater_name": "wh_m15_2"
+    },
+    {
+      "global_idx": 282,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_3",
+      "zip_name": "zip_m15_3",
+      "waterheater_name": "wh_m15_3"
+    },
+    {
+      "global_idx": 283,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_4",
+      "zip_name": "zip_m15_4",
+      "waterheater_name": "wh_m15_4"
+    },
+    {
+      "global_idx": 284,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_5",
+      "zip_name": "zip_m15_5",
+      "waterheater_name": "wh_m15_5"
+    },
+    {
+      "global_idx": 285,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_6",
+      "zip_name": "zip_m15_6",
+      "waterheater_name": "wh_m15_6"
+    },
+    {
+      "global_idx": 286,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_7",
+      "zip_name": "zip_m15_7",
+      "waterheater_name": "wh_m15_7"
+    },
+    {
+      "global_idx": 287,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_8",
+      "zip_name": "zip_m15_8",
+      "waterheater_name": "wh_m15_8"
+    },
+    {
+      "global_idx": 288,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_9",
+      "zip_name": "zip_m15_9",
+      "waterheater_name": "wh_m15_9"
+    },
+    {
+      "global_idx": 289,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_10",
+      "zip_name": "zip_m15_10",
+      "waterheater_name": "wh_m15_10"
+    },
+    {
+      "global_idx": 290,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_11",
+      "zip_name": "zip_m15_11",
+      "waterheater_name": "wh_m15_11"
+    },
+    {
+      "global_idx": 291,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_12",
+      "zip_name": "zip_m15_12",
+      "waterheater_name": "wh_m15_12"
+    },
+    {
+      "global_idx": 292,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_13",
+      "zip_name": "zip_m15_13",
+      "waterheater_name": "wh_m15_13"
+    },
+    {
+      "global_idx": 293,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_14",
+      "zip_name": "zip_m15_14",
+      "waterheater_name": "wh_m15_14"
+    },
+    {
+      "global_idx": 294,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_15",
+      "zip_name": "zip_m15_15",
+      "waterheater_name": "wh_m15_15"
+    },
+    {
+      "global_idx": 295,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_16",
+      "zip_name": "zip_m15_16",
+      "waterheater_name": "wh_m15_16"
+    },
+    {
+      "global_idx": 296,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_17",
+      "zip_name": "zip_m15_17",
+      "waterheater_name": "wh_m15_17"
+    },
+    {
+      "global_idx": 297,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_18",
+      "zip_name": "zip_m15_18",
+      "waterheater_name": "wh_m15_18"
+    },
+    {
+      "global_idx": 298,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_19",
+      "zip_name": "zip_m15_19",
+      "waterheater_name": "wh_m15_19"
+    },
+    {
+      "global_idx": 299,
+      "concentrator_idx": 15,
+      "gateway_bus": "692",
+      "house_name": "house_m15_20",
+      "zip_name": "zip_m15_20",
+      "waterheater_name": "wh_m15_20"
+    }
+  ]
+}

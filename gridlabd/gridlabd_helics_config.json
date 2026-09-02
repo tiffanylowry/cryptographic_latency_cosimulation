@@ -1,0 +1,64 @@
+{
+    "name": "gridlabd_federate",
+    "core_type": "zmq",
+    "period": 60,
+    "log_level": "warning",
+    "uninterruptible": false,
+    "terminate_on_error": true,
+    "publications": [
+        {
+            "key": "total_load",
+            "type": "complex",
+            "unit": "VA",
+            "global": false,
+            "info": "{\"object\":\"substation\",\"property\":\"measured_power\"}"
+        },
+        {
+            "key": "house_1_load",
+            "type": "complex",
+            "unit": "VA",
+            "global": false,
+            "info": "{\"object\":\"triplex_meter_1\",\"property\":\"measured_power\"}"
+        },
+        {
+            "key": "house_2_load",
+            "type": "complex",
+            "unit": "VA",
+            "global": false,
+            "info": "{\"object\":\"triplex_meter_2\",\"property\":\"measured_power\"}"
+        },
+        {
+            "key": "voltage_1",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"triplex_meter_1\",\"property\":\"voltage_1\"}"
+        }
+    ],
+    "subscriptions": [
+        {
+            "key": "ns3_federate/control_house_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"load_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"load_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"load_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"load_4\",\"property\":\"base_power\"}"
+        }
+    ]
+}

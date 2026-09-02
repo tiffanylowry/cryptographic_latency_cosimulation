@@ -1,0 +1,56 @@
+# crypto_config.txt
+#
+# Phase 3 runtime configuration: cryptographic processing latency toggle,
+# default profile, optional one-time handshake, grid-role catalog, and
+# per-node profile/role assignment. Hand-rolled key=value format (no JSON
+# library is linked into the NS-3 scratch build — see CLAUDE.md's Phase 3
+# section for why). Lines starting with # are comments; blank lines ignored.
+#
+# Resolution precedence for a node's effective crypto profile:
+#   1. node.<id>.profile=<name>   (explicit override, highest precedence)
+#   2. role.<role>.default_profile, via node.<id>.role=<role>
+#   3. default_profile             (global fallback, lowest precedence)
+#
+# <id> is a meter index (1..NUM_HOUSES) or the literal "aggregator".
+# A profile value of "none" always means zero added latency (legacy/
+# unencrypted device) and is valid in any node.<id>.profile= line.
+
+enabled=false
+default_profile=ascon-aead128-arm32
+
+handshake_enabled=false
+handshake_profile=curve25519-ecdh-m0
+
+# --- Grid-role catalog ---
+# Maps a grid role to a realistic default device-class profile and an
+# IEC 61850-5 transfer-time (TT) class latency budget (paper Table XXIII):
+#   TT6=3ms  TT5=10ms  TT4=20ms  TT3=100ms  TT2=500ms  TT1=1000ms  TT0=unbounded
+# A node tagged with a role whose resolved latency exceeds its tt_budget_ms
+# prints a startup WARNING (not an abort) — see CLAUDE.md Phase 3 section.
+
+role.protection_relay.default_profile=aes-gcm-artix7
+role.protection_relay.tt_budget_ms=3
+
+role.substation_aggregator.default_profile=aes-gcm-artix7
+role.substation_aggregator.tt_budget_ms=20
+
+role.nan_gateway.default_profile=aes-gcm-arm32
+role.nan_gateway.tt_budget_ms=100
+
+role.residential_meter.default_profile=ascon-aead128-arm32
+role.residential_meter.tt_budget_ms=500
+
+role.legacy_meter.default_profile=none
+role.legacy_meter.tt_budget_ms=1000
+
+# --- Node assignment ---
+# Default topology: aggregator acts as a NAN gateway/data concentrator;
+# meters 1 and 3 are modern residential AMI meters; meter 2 is a worked
+# example of a legacy/unencrypted meter coexisting on the same segment;
+# meter 4 shows an explicit profile override (skips role-based TT check).
+
+node.aggregator.role=nan_gateway
+node.1.role=residential_meter
+node.2.role=legacy_meter
+node.3.role=residential_meter
+node.4.profile=aes-gcm-avr8

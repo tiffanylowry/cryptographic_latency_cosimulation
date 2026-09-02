@@ -1,0 +1,2030 @@
+{
+    "name": "gridlabd_federate",
+    "core_type": "zmq",
+    "period": 1,
+    "log_level": "warning",
+    "uninterruptible": false,
+    "terminate_on_error": true,
+    "publications": [
+        {
+            "key": "total_load",
+            "type": "complex",
+            "unit": "VA",
+            "global": false,
+            "info": "{\"object\":\"650\",\"property\":\"measured_power\"}"
+        },
+        {
+            "key": "conc_1_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter1\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_1_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter1\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_2_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter2\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_2_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter2\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_3_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter3\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_3_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter3\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_4_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter4\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_4_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter4\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_5_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter5\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_5_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter5\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_6_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter6\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_6_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter6\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_7_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter7\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_7_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter7\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_8_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter8\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_8_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter8\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_9_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter9\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_9_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter9\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_10_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter10\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_10_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter10\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_11_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter11\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_11_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter11\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_12_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter12\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_12_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter12\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_13_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter13\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_13_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter13\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_14_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter14\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_14_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter14\",\"property\":\"voltage_1\"}"
+        },
+        {
+            "key": "conc_15_load",
+            "type": "double",
+            "unit": "W",
+            "global": false,
+            "info": "{\"object\":\"trip_meter15\",\"property\":\"measured_real_power\"}"
+        },
+        {
+            "key": "conc_15_voltage",
+            "type": "complex",
+            "unit": "V",
+            "global": false,
+            "info": "{\"object\":\"trip_meter15\",\"property\":\"voltage_1\"}"
+        }
+    ],
+    "subscriptions": [
+        {
+            "key": "ns3_federate/control_house_m1_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m1_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m1_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m2_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m2_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m3_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m3_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m4_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m4_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m5_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m5_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m6_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m6_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m7_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m7_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m8_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m8_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m9_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m9_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m10_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m10_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m11_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m11_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m12_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m12_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m13_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m13_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m14_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m14_20\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_1",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_1\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_2",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_2\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_3",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_3\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_4",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_4\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_5",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_5\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_6",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_6\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_7",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_7\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_8",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_8\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_9",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_9\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_10",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_10\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_11",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_11\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_12",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_12\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_13",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_13\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_14",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_14\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_15",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_15\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_16",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_16\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_17",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_17\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_18",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_18\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_19",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_19\",\"property\":\"base_power\"}"
+        },
+        {
+            "key": "ns3_federate/control_house_m15_20",
+            "type": "double",
+            "required": false,
+            "info": "{\"object\":\"zip_m15_20\",\"property\":\"base_power\"}"
+        }
+    ],
+    "time_delta": 0.001
+}
